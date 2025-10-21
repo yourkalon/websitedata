@@ -25,8 +25,8 @@
   },60);
 
   // 🔗 এখানে লিঙ্ক পরিবর্তন করুন
-  const watchURL="https://werasxa.blogspot.com/",
-        downloadURL="https://werasxa.blogspot.com/",
+  const watchURL="https://videohubsa.blogspot.com/",
+        downloadURL="https://videohubsa.blogspot.com/",
         redirectURL="https://zmistar.blogspot.com/p/parves_9.html";
 
   function go(link){

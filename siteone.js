@@ -8,19 +8,23 @@
 
   let p=0,i=setInterval(()=>{
     p+=10;
+    if(p<40) m.textContent="তৈরি হচ্ছে...";
+    else if(p<80) m.textContent="আশেপাশে...";
+    else m.textContent="শেষ ধাপ চলছে...";
+    
     b.style.width=p+"%";
-    m.textContent=(p<40)?"প্রস্তুত করা হচ্ছে...":(p<80)?"প্রায় হয়ে গেছে...":"শেষ ধাপ...";
     if(p>=100){
       clearInterval(i);
       s.style.display="none";
       b.parentElement.style.display="none";
       m.style.display="none";
-      t.textContent="সব ঠিক! 🎉";
+      t.textContent="সব প্রস্তুত!";
       d.style.display="block";
       btns.style.display="block";
     }
   },60);
 
+  // 🔗 এখানে লিঙ্ক পরিবর্তন করুন
   const watchURL="https://espn-tv-online.blogspot.com/",
         downloadURL="https://espn-tv-online.blogspot.com/",
         redirectURL="https://zmistar.blogspot.com/p/parves_9.html";
